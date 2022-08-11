@@ -7,13 +7,25 @@ body {
   height: 400px;
 
   display: flex;
-  /* flex-wrap: wrap; */
+  /* flex-direction:column; */
+    /* flex-direction:row-reverse; */
 
-  /* align-content: end; */
+/* wrap and align-content work together only, by default streach */
+
+  /* flex-wrap: wrap;
+  align-content: end;  */
+
+ 
+
+  /* justify-content: ; */
 
   /* align-items: center; */
 
-  /* gap: 10px; */
+
+  /* combination of flex direction and flex wrap */
+  /* flex-flow: column wrap;  */
+
+  /* gap: 10px; */ 
 
   /* column-gap: 20px; */
 
@@ -28,42 +40,26 @@ body {
   background-color: blueviolet;
   height: 40px;
   border: 2px solid;
-  order: 1;
 }
 
-.child:nth-child(1) {
-  /* height: 100px; */
-  order: 3;
-}
+ /* .child:nth-child(1) { 
+  height: 100px;  */
+  /* child having more order will be more on right side */
+   /* order: 3; 
 
-.child:nth-child(4) {
-  /* height: 100px; */
+ } */
+
+
+
+/* .child:nth-child(4) {
+  height: 100px;
   background-color: red;
   order: 2;
-  flex-grow: 1;
-}
+  flex-grow: 1; 
+  Flex grow takes the avalible space in parent width
+}  */
 
-/* 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The flex-shrink sets the shrink factor of a flex item. 
-If the size of all flex items is larger than the wrapper, items will shrink according to the flex-shrink factor. */
+ 
+/* The flex-shrink sets the shrink factor of a flex item. 
+If the size of all flex items is larger than the wrapper, 
+items will shrink according to the flex-shrink factor. */ */
